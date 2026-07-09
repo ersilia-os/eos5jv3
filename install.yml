@@ -1,6 +1,6 @@
 python: "3.10"
 commands:
-    - ["pip", "torch", "2.0.1+cpu", "--index-url", "https://download.pytorch.org/whl/cpu"]
+    - ["pip", "torch", "2.0.1", "--index-url", "https://download.pytorch.org/whl/cpu"]
     - ["pip", "setuptools", "69.5.1"]
     - ["pip", "chemprop", "1.6.1"]
     - ["pip", "rdkit", "2024.9.5"]

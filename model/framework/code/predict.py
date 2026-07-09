@@ -35,8 +35,26 @@ import tempfile
 
 import numpy as np
 import pandas as pd
+import argparse
+
+import torch
 from chemprop.args import PredictArgs
 from chemprop.train import make_predictions
+
+try:
+    torch.serialization.add_safe_globals([argparse.Namespace])
+except AttributeError:
+    pass
+
+_orig_torch_load = torch.load
+
+
+def _torch_load(*args, **kwargs):
+    kwargs.setdefault("weights_only", False)
+    return _orig_torch_load(*args, **kwargs)
+
+
+torch.load = _torch_load
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CHECKPOINT = os.path.abspath(os.path.join(ROOT, "..", "..", "checkpoints", "mpn_model.pt"))
