@@ -1,6 +1,6 @@
 Identifier: eos5jv3
 Slug: mycopermenet
-Status: In progress
+Status: Ready
 Title: MycoPermeNet
 Description: Predicts the permeation of small molecules across the mycomembrane 
   (the mycobacterial outer membrane) of *Mycobacterium tuberculosis*. Taking a 
@@ -38,6 +38,16 @@ Source Code: https://github.com/Nevbarunegbe/Mycomembrane-permeability-project
 License: MIT
 Contributor: GemmaTuron
 Incorporation Date: '2026-07-09'
+Last Packaging Date: '2026-07-09'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos5jv3
+Docker Architecture: AMD64
 Model Size: 2.0
 Environment Size: 1674.0
+Image Size: 1659.0
+Computational Performance 1: 32.8
+Computational Performance 2: 22.05
+Computational Performance 3: 23.34
+Computational Performance 4: 49.27
+Computational Performance 5: 178.33
