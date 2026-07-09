@@ -11,34 +11,27 @@ Description: Predicts the permeation of small molecules across the mycomembrane
   accumulate within Mtb cells.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Activity prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
   - Value
-  - Score
-  - Compound
-  - Text
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Consistency: Fixed
+Interpretation: Predicted standardized residual of mycomembrane permeation; lower
+  values indicate higher permeability in M. tuberculosis.
 Tag:
   - Permeability
   - Antimicrobial activity
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Tuberculosis
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Mycobacterium tuberculosis
+Publication Type: Peer reviewed
 Publication Year: 2026
 Publication: https://doi.org/10.1038/s41564-026-02412-5
 Source Code: https://github.com/Nevbarunegbe/Mycomembrane-permeability-project
