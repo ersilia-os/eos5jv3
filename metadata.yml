@@ -22,8 +22,8 @@ Output:
   - Value
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Predicted standardized residual of mycomembrane permeation; lower
-  values indicate higher permeability in M. tuberculosis.
+Interpretation: Predicted standardized residual of mycomembrane permeation; 
+  lower values indicate higher permeability in M. tuberculosis.
 Tag:
   - Permeability
   - Antimicrobial activity
@@ -37,3 +37,4 @@ Publication: https://doi.org/10.1038/s41564-026-02412-5
 Source Code: https://github.com/Nevbarunegbe/Mycomembrane-permeability-project
 License: MIT
 Contributor: GemmaTuron
+Incorporation Date: '2026-07-09'
