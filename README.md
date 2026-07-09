@@ -44,9 +44,9 @@ Below are the **Output Columns** of the model:
 - **Image Size (Mb):** `1659`
 
 **Computational Performance (seconds):**
-- 10 inputs: `32.8`
-- 100 inputs: `23.34`
-- 10000 inputs: `178.33`
+- 10 inputs: `34.06`
+- 100 inputs: `25.74`
+- 10000 inputs: `187.37`
 
 ### References
 - **Source Code**: [https://github.com/Nevbarunegbe/Mycomembrane-permeability-project](https://github.com/Nevbarunegbe/Mycomembrane-permeability-project)
