@@ -1,1 +1,2 @@
 name,type,direction,description
+mycomembrane_permeation,float,low,Predicted standardized residual of mycomembrane permeation in Mycobacterium tuberculosis where lower values indicate higher permeability
