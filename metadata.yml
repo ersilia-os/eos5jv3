@@ -1,33 +1,37 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos5jv3
+Slug: mycopermenet
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: MycoPermeNet
+Description: Predicts the permeation of small molecules across the mycomembrane 
+  (the mycobacterial outer membrane) of *Mycobacterium tuberculosis*. Taking a 
+  SMILES string as input, this deep-learning model (a multilayer perceptron over
+  learned chemical embeddings) outputs a standardized-residual permeability 
+  score. Higher permeation is associated with nitrogen-containing aromatic 
+  scaffolds such as indole. Useful for prioritizing anti-TB compounds likely to 
+  accumulate within Mtb cells.
 Deployment:
   - Local
   - Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
+Subtask: Property calculation or prediction, Activity prediction, Featurization,
+  Projection, Similarity search, Generation
+Input:
   - Compound
 Input Dimension: 1
-Output: 
+Output:
   - Value
   - Score
   - Compound
   - Text
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: The output of this template model should be interpreted like 
+  this.
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - Permeability
+  - Antimicrobial activity
 Biomedical Area:
   - Biomedical Area 1
   - Biomedical Area 2
@@ -36,6 +40,7 @@ Target Organism:
   - Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2026
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://doi.org/10.1038/s41564-026-02412-5
+Source Code: https://github.com/Nevbarunegbe/Mycomembrane-permeability-project
+License: MIT
+Contributor: GemmaTuron
