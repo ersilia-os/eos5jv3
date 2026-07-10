@@ -2,7 +2,7 @@
 
 Predicts the permeation of small molecules across the mycomembrane (the mycobacterial outer membrane) of _Mycobacterium tuberculosis_. Taking a SMILES string as input, this deep-learning model (a multilayer perceptron over learned chemical embeddings) outputs a standardized-residual permeability score. Higher permeation is associated with nitrogen-containing aromatic scaffolds such as indole. Useful for prioritizing anti-TB compounds likely to accumulate within Mtb cells.
 
-This model was incorporated on 2026-07-09.Last packaged on 2026-07-09.
+This model was incorporated on 2026-07-09.Last packaged on 2026-07-10.
 
 ## Information
 ### Identifiers
@@ -35,18 +35,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5jv3](https://hub.docker.com/r/ersiliaos/eos5jv3)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `2`
 - **Environment Size (Mb):** `1674`
-- **Image Size (Mb):** `1659`
+- **Image Size (Mb):** `1658.99`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.06`
-- 100 inputs: `25.74`
-- 10000 inputs: `187.37`
+- 10 inputs: `38.85`
+- 100 inputs: `23.21`
+- 10000 inputs: `148.64`
 
 ### References
 - **Source Code**: [https://github.com/Nevbarunegbe/Mycomembrane-permeability-project](https://github.com/Nevbarunegbe/Mycomembrane-permeability-project)
