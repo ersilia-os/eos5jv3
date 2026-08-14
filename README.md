@@ -1,8 +1,8 @@
 # MycoPermeNet
 
-Predicts the permeation of small molecules across the mycomembrane (the mycobacterial outer membrane) of _Mycobacterium tuberculosis_. Taking a SMILES string as input, this deep-learning model (a multilayer perceptron over learned chemical embeddings) outputs a standardized-residual permeability score. Higher permeation is associated with nitrogen-containing aromatic scaffolds such as indole. Useful for prioritizing anti-TB compounds likely to accumulate within Mtb cells.
+Predicts the permeation of small molecules across the mycomembrane (outer membrane) of _Mycobacterium tuberculosis_ from a SMILES string. This MycoPermeNet-v2 model fuses a graph neural network embedding with normalized RDKit descriptors and a multilayer perceptron, trained with a Fusion Noisy Student Self-Distillation strategy. Lower scores indicate higher permeability. Applicability domain -- trained on small azide-tagged compounds (MW ~82-570, up to ~50 heavy atoms); predictions for larger, out-of-domain molecules may fall outside the -3.1 to +1.6 output range and be unreliable.
 
-This model was incorporated on 2026-07-09.Last packaged on 2026-07-10.
+This model was incorporated on 2026-07-09.Last packaged on 2026-08-12.
 
 ## Information
 ### Identifiers
@@ -49,8 +49,8 @@ Below are the **Output Columns** of the model:
 - 10000 inputs: `148.64`
 
 ### References
-- **Source Code**: [https://github.com/Nevbarunegbe/Mycomembrane-permeability-project](https://github.com/Nevbarunegbe/Mycomembrane-permeability-project)
-- **Publication**: [https://doi.org/10.1038/s41564-026-02412-5](https://doi.org/10.1038/s41564-026-02412-5)
+- **Source Code**: [https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub](https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub)
+- **Publication**: [https://doi.org/10.1021/acs.jcim.5c02435](https://doi.org/10.1021/acs.jcim.5c02435)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2026`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
