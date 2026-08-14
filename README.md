@@ -2,7 +2,7 @@
 
 Predicts the permeation of small molecules across the mycomembrane (outer membrane) of _Mycobacterium tuberculosis_ from a SMILES string. This MycoPermeNet-v2 model fuses a graph neural network embedding with normalized RDKit descriptors and a multilayer perceptron, trained with a Fusion Noisy Student Self-Distillation strategy. Lower scores indicate higher permeability. Applicability domain -- trained on small azide-tagged compounds (MW ~82-570, up to ~50 heavy atoms); predictions for larger, out-of-domain molecules may fall outside the -3.1 to +1.6 output range and be unreliable.
 
-This model was incorporated on 2026-07-09.Last packaged on 2026-08-12.
+This model was incorporated on 2026-07-09.Last packaged on 2026-08-14.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `4`
 - **Environment Size (Mb):** `1653`
-- **Image Size (Mb):** `1658.99`
+- **Image Size (Mb):** `1632.46`
 
 **Computational Performance (seconds):**
-- 10 inputs: `38.85`
-- 100 inputs: `23.21`
-- 10000 inputs: `148.64`
+- 10 inputs: `35.73`
+- 100 inputs: `25.85`
+- 10000 inputs: `254.29`
 
 ### References
 - **Source Code**: [https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub](https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub)
