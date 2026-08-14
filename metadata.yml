@@ -39,8 +39,8 @@ Source Code: https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub
 License: MIT
 Contributor: GemmaTuron
 Incorporation Date: '2026-07-09'
-Last Packaging Date: '2026-08-12'
-Release: v2.0.0
+Last Packaging Date: '2026-08-14'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5jv3
 Docker Architecture:
@@ -48,9 +48,9 @@ Docker Architecture:
   - ARM64
 Model Size: 4.0
 Environment Size: 1653.0
-Image Size: 1658.99
-Computational Performance 1: 38.85
-Computational Performance 2: 25.33
-Computational Performance 3: 23.21
-Computational Performance 4: 51.26
-Computational Performance 5: 148.64
+Image Size: 1632.46
+Computational Performance 1: 35.73
+Computational Performance 2: 26.62
+Computational Performance 3: 25.85
+Computational Performance 4: 65.33
+Computational Performance 5: 254.29
