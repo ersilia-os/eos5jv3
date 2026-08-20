@@ -1,15 +1,8 @@
 Identifier: eos5jv3
 Slug: mycopermenet
 Status: Ready
-Title: MycoPermeNet
-Description: Predicts the permeation of small molecules across the mycomembrane 
-  (outer membrane) of *Mycobacterium tuberculosis* from a SMILES string. This 
-  MycoPermeNet-v2 model fuses a graph neural network embedding with normalized 
-  RDKit descriptors and a multilayer perceptron, trained with a Fusion Noisy 
-  Student Self-Distillation strategy. Lower scores indicate higher permeability.
-  Applicability domain -- trained on small azide-tagged compounds (MW ~82-570, 
-  up to ~50 heavy atoms); predictions for larger, out-of-domain molecules may 
-  fall outside the -3.1 to +1.6 output range and be unreliable.
+Title: MycoPermeNet mycobacterial membrane permeation
+Description: 'Predicts passage through the mycobacterial outer membrane, the waxy barrier that makes Mycobacterium tuberculosis unusually impermeable and narrows the chemistry available for tuberculosis drug discovery. Machine learning was applied to accumulation measurements to identify the features favouring permeation. The output is a standardised residual rather than a raw rate, and it runs in the opposite direction to intuition: lower values indicate a compound that permeates more readily.'
 Deployment:
   - Local
 Source: Local
@@ -23,8 +16,7 @@ Output:
   - Value
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Predicted standardized residual of mycomembrane permeation; 
-  lower values indicate higher permeability in M. tuberculosis.
+Interpretation: Standardised residual of mycomembrane permeation, where lower values indicate greater permeability.
 Tag:
   - Permeability
   - Antimicrobial activity
@@ -34,8 +26,8 @@ Target Organism:
   - Mycobacterium tuberculosis
 Publication Type: Peer reviewed
 Publication Year: 2026
-Publication: https://doi.org/10.1021/acs.jcim.5c02435
-Source Code: https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub
+Publication: https://doi.org/10.1038/s41564-026-02412-5
+Source Code: https://github.com/Nevbarunegbe/Mycomembrane-permeability-project
 License: MIT
 Contributor: GemmaTuron
 Incorporation Date: '2026-07-09'
