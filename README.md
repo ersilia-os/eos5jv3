@@ -1,6 +1,6 @@
 # MycoPermeNet mycobacterial membrane permeation
 
-Predicts passage through the mycobacterial outer membrane, the waxy barrier that makes Mycobacterium tuberculosis unusually impermeable and narrows the chemistry available for tuberculosis drug discovery. Machine learning was applied to accumulation measurements to identify the features favouring permeation. The output is a standardised residual rather than a raw rate, and it runs in the opposite direction to intuition: lower values indicate a compound that permeates more readily.
+Predicts the permeation of small molecules across the mycomembrane (outer membrane) of _Mycobacterium tuberculosis_ from a SMILES string. This MycoPermeNet-v2 model fuses a graph neural network embedding with normalized RDKit descriptors and a multilayer perceptron, trained with a Fusion Noisy Student Self-Distillation strategy. Lower scores indicate higher permeability. Applicability domain -- trained on small azide-tagged compounds (MW ~82-570, up to ~50 heavy atoms); predictions for larger, out-of-domain molecules may fall outside the -3.1 to +1.6 output range and be unreliable.
 
 This model was incorporated on 2026-07-09.Last packaged on 2026-08-14.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-07-09.Last packaged on 2026-08-14.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Standardised residual of mycomembrane permeation, where lower values indicate greater permeability.
+- **Interpretation:** Predicted standardized residual of mycomembrane permeation; lower values indicate higher permeability in M. tuberculosis.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
