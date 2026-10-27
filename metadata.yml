@@ -2,14 +2,14 @@ Identifier: eos5jv3
 Slug: mycopermenet
 Status: Ready
 Title: MycoPermeNet mycobacterial membrane permeation
-Description: Predicts how readily a small molecule crosses the mycomembrane, the waxy
-  barrier that keeps drugs out of Mycobacterium tuberculosis. Lepori and colleagues
-  profiled 1,572 azide-tagged compounds with the click-chemistry PAC-MAN assay, then
-  confirmed the chemical correlates by synthesising and testing three new molecule
-  series. Ersilia serves MycoPermeNet-v2, which fuses a directed message-passing graph
-  encoder with normalised RDKit descriptors in a multilayer perceptron trained by
-  Fusion Noisy Student self-distillation. Training compounds were small, so larger
-  molecules are out of domain.
+Description: Predicts how readily a small molecule crosses the mycomembrane, the
+  waxy barrier that keeps drugs out of Mycobacterium tuberculosis. Lepori and 
+  colleagues profiled 1,572 azide-tagged compounds with the click-chemistry 
+  PAC-MAN assay, then confirmed the chemical correlates by synthesising and 
+  testing three new molecule series. Ersilia serves MycoPermeNet-v2, which fuses
+  a directed message-passing graph encoder with normalised RDKit descriptors in 
+  a multilayer perceptron trained by Fusion Noisy Student self-distillation. 
+  Training compounds were small, so larger molecules are out of domain.
 Deployment:
   - Local
 Source: Local
@@ -23,9 +23,9 @@ Output:
   - Value
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Standardised residual of mycomembrane permeation in Mycobacterium
-  tuberculosis, where lower values indicate greater permeability, typically between
-  -3.1 and 1.6.
+Interpretation: Standardised residual of mycomembrane permeation in 
+  Mycobacterium tuberculosis, where lower values indicate greater permeability, 
+  typically between -3.1 and 1.6.
 Tag:
   - Permeability
   - Antimicrobial activity
@@ -41,7 +41,7 @@ License: MIT
 Contributor: GemmaTuron
 Incorporation Date: '2026-07-09'
 Last Packaging Date: '2026-08-14'
-Release: v2.0.0
+Release: v2.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5jv3
 Docker Architecture:
