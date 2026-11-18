@@ -2,7 +2,8 @@
 
 Predicts how readily a small molecule crosses the mycomembrane, the waxy barrier that keeps drugs out of Mycobacterium tuberculosis. Lepori and colleagues profiled 1,572 azide-tagged compounds with the click-chemistry PAC-MAN assay, then confirmed the chemical correlates by synthesising and testing three new molecule series. Ersilia serves MycoPermeNet-v2, which fuses a directed message-passing graph encoder with normalised RDKit descriptors in a multilayer perceptron trained by Fusion Noisy Student self-distillation. Training compounds were small, so larger molecules are out of domain.
 
-This model was incorporated on 2026-07-09.Last packaged on 2026-08-14.
+This model was incorporated on 2026-07-09.
+Last packaged on 2026-08-14.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5jv3](https://hub.docker.com/r/ersiliaos/eos5jv3)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5jv3.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos5jv3_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos5jv3_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `4`
@@ -49,8 +51,8 @@ Below are the **Output Columns** of the model:
 - 10000 inputs: `254.29`
 
 ### References
-- **Source Code**: [https://github.com/Nevbarunegbe/Mycomembrane-permeability-project](https://github.com/Nevbarunegbe/Mycomembrane-permeability-project)
-- **Publication**: [https://doi.org/10.1038/s41564-026-02412-5](https://doi.org/10.1038/s41564-026-02412-5)
+- **Source Code**: [https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub](https://github.com/SAGE-Lab-UMass/MycoPermeNet-v2-pub)
+- **Publication**: [https://doi.org/10.1021/acs.jcim.5c02435](https://doi.org/10.1021/acs.jcim.5c02435)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2026`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
